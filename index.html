@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="IKK Services - AC cleaning, maintenance and home repairs in Tarawa, Gilbert Islands.">
+<title>IKK Services | AC Cleaning & Home Repairs</title>
+<style>
+:root{
+  --navy:#073b73;
+  --blue:#087fbd;
+  --cyan:#20b8d4;
+  --light:#eef9fd;
+  --text:#17324d;
+  --white:#fff;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff}
+header{
+  position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);
+  box-shadow:0 2px 14px rgba(0,0,0,.08)
+}
+.nav{max-width:1150px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;font-size:25px;color:var(--navy);letter-spacing:.5px;display:flex;align-items:center;gap:9px}.brand img{width:42px;height:42px;object-fit:contain;border-radius:8px}
+.brand span{color:var(--blue)}
+nav a{margin-left:22px;text-decoration:none;color:var(--navy);font-weight:700}
+nav a:hover{color:var(--blue)}
+.hero{
+  min-height:650px;display:grid;place-items:center;text-align:center;
+  background:linear-gradient(135deg,#e9f8ff,#fff 55%,#dff5fb);
+  padding:70px 20px 55px;
+}
+.hero-inner{max-width:1050px}
+.hero-logo{width:190px;max-width:55vw;margin-bottom:12px}.ikk-hero-logo{width:150px;height:150px;object-fit:contain;border-radius:22px}
+h1{font-size:clamp(42px,7vw,78px);line-height:.95;margin:10px 0;color:var(--navy);letter-spacing:-2px}
+h1 span{color:var(--cyan)}
+.tagline{font-size:clamp(18px,2.4vw,27px);margin:20px auto;max-width:760px;font-weight:700}
+.cta{display:inline-block;margin:12px 7px;padding:15px 27px;border-radius:999px;text-decoration:none;font-weight:900}
+.primary{background:var(--navy);color:white}.secondary{background:white;color:var(--navy);border:2px solid var(--navy)}
+.section{max-width:1150px;margin:auto;padding:75px 22px}
+.section h2{text-align:center;font-size:38px;margin:0 0 12px;color:var(--navy)}
+.lead{text-align:center;max-width:760px;margin:0 auto 40px;font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.card{background:var(--light);padding:25px 18px;border-radius:18px;text-align:center;border:1px solid #d7edf5}
+.icon{font-size:35px}.card h3{margin:10px 0 8px;color:var(--navy);font-size:17px}
+.card p{font-size:14px;line-height:1.5;margin:0}
+.highlight{background:linear-gradient(135deg,var(--navy),#0c78ad);color:white}
+.highlight h2{color:white}.highlight .lead{color:#e8f9ff}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.benefit{background:rgba(255,255,255,.12);padding:25px;border-radius:18px;text-align:center}
+.benefit strong{display:block;font-size:18px;margin-bottom:8px}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px;align-items:stretch}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.gallery img:first-child{grid-row:span 2}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.contact-box{background:var(--light);border-radius:22px;padding:32px}
+.contact-item{font-size:18px;margin:18px 0}.contact-item b{color:var(--navy)}
+footer{background:#062b52;color:white;text-align:center;padding:30px 20px}
+.small{font-size:14px;opacity:.85}
+@media(max-width:850px){
+  nav a{margin-left:10px;font-size:14px}.cards{grid-template-columns:repeat(2,1fr)}
+  .benefits{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr}
+  .gallery img:first-child{grid-column:span 2;grid-row:auto}.contact{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  nav{display:none}.nav{justify-content:center}.cards,.benefits,.gallery{grid-template-columns:1fr}
+  .gallery img:first-child{grid-column:auto}.hero{min-height:580px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand"><img src="ikk-logo.png" alt="IKK Services logo"> <span>IKK SERVICES</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <img class="hero-logo ikk-hero-logo" src="ikk-logo.png" alt="IKK Services logo">
+    <div style="font-weight:800;color:#087fbd;letter-spacing:2px">IKK SERVICES</div>
+    <h1>AC SPLIT<br><span>CLEANING</span></h1>
+    <div class="tagline">Clean air. Better cooling. Healthier home.</div>
+    <p>Professional air-conditioner cleaning, maintenance and home repair services in Tarawa.</p>
+    <a class="cta primary" href="tel:73068281">📞 BOOK NOW</a>
+    <a class="cta secondary" href="#services">VIEW SERVICES</a>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2>Our AC Cleaning Includes</h2>
+  <p class="lead">Regular cleaning helps your AC cool better, run more efficiently and maintain cleaner indoor air.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🧼</div><h3>Filter Cleaning</h3><p>Removes dust and allergens from your AC filters.</p></div>
+    <div class="card"><div class="icon">❄️</div><h3>Evaporator Coil</h3><p>Deep cleaning to support better cooling performance.</p></div>
+    <div class="card"><div class="icon">🌀</div><h3>Fan & Blower</h3><p>Cleaning for smoother and quieter operation.</p></div>
+    <div class="card"><div class="icon">💧</div><h3>Drain Line</h3><p>Helps prevent water leaks, blockage and bad odours.</p></div>
+    <div class="card"><div class="icon">✓</div><h3>Complete AC Check</h3><p>Basic checks to help your AC run at its best.</p></div>
+  </div>
+</section>
+
+<section class="section highlight" id="why">
+  <h2>Why Choose IKK Services?</h2>
+  <p class="lead">Reliable service for homes and offices across Tarawa.</p>
+  <div class="benefits">
+    <div class="benefit"><strong>🛡️ Expert & Reliable</strong><span>Professional service you can trust.</span></div>
+    <div class="benefit"><strong>⏱️ Fast & On Time</strong><span>We value your time and comfort.</span></div>
+    <div class="benefit"><strong>👍 Affordable Prices</strong><span>Quality service at fair prices.</span></div>
+    <div class="benefit"><strong>🏠 Home & Office</strong><span>We clean all brands and models.</span></div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2>Our Work & Brand</h2>
+  <p class="lead">See our AC cleaning service presentation and business details.</p>
+  <div class="gallery">
+    <img src="ac-cleaning-ad.png" alt="IKK Services AC split cleaning advertisement">
+    <img src="business-card.png" alt="IKK Services business card">
+    <img src="ikk-logo.png" alt="IKK Services logo">
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Book Your AC Cleaning</h2>
+  <p class="lead">Ready for cleaner air and better cooling? Contact IKK Services today.</p>
+  <div class="contact">
+    <div class="contact-box">
+      <div class="contact-item">📞 <b>Phone:</b> <a href="tel:73068281">73068281</a></div>
+      <div class="contact-item">✉️ <b>Email:</b> <a href="mailto:roytekauteb@gmail.com">roytekauteb@gmail.com</a></div>
+      <div class="contact-item">📍 <b>Location:</b> Tarawa, Gilbert Islands</div>
+      <div class="contact-item">📱 <b>Social:</b> @IKKSERVICES</div>
+    </div>
+    <div style="text-align:center">
+      <h3 style="font-size:32px;color:#073b73;margin-bottom:8px">Breathe Clean.<br>Feel the Difference.</h3>
+      <a class="cta primary" href="tel:73068281">CALL 73068281</a>
+      <a class="cta secondary" href="mailto:roytekauteb@gmail.com">EMAIL US</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>IKK SERVICES</strong> — AC Cleaning Maintenance and Home Repairs
+  <div class="small">Tarawa, Gilbert Islands • 73068281 • roytekauteb@gmail.com</div>
+</footer>
+</body>
+</html>
