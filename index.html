@@ -326,7 +326,8 @@
                     <!-- Quick Form -->
                     <div class="p-8 sm:p-12">
                         <h3 class="text-2xl font-bold text-slate-900 mb-6">Send a Quick Message</h3>
-                        <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <<form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="141817e9-92ac-4b52-bbbb-e8f8a94dd365">
                             <div>
                                 <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Your Name</label>
                                 <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-cyan-600" placeholder="Full Name">
