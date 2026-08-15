@@ -1,333 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="IKK Services - AC cleaning, maintenance and home repairs in Tarawa, Gilbert Islands.">
-<title>IKK Services | AC Cleaning & Home Repairs</title>
-<style>
-:root{
-  --navy:#073b73;
-  --blue:#087fbd;
-  --cyan:#20b8d4;
-  --light:#eef9fd;
-  --text:#17324d;
-  --white:#fff;
-}
-*{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff}
-header{
-  position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);
-  box-shadow:0 2px 14px rgba(0,0,0,.08)
-}
-.nav{max-width:1150px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:900;font-size:25px;color:var(--navy);letter-spacing:.5px}
-.brand span{color:var(--blue)}
-nav a{margin-left:22px;text-decoration:none;color:var(--navy);font-weight:700}
-nav a:hover{color:var(--blue)}
-.hero{
-  min-height:650px;display:grid;place-items:center;text-align:center;
-  background:linear-gradient(135deg,#e9f8ff,#fff 55%,#dff5fb);
-  padding:70px 20px 55px;
-}
-.hero-inner{max-width:1050px}
-.hero-logo{width:190px;max-width:55vw;margin-bottom:12px}
-h1{font-size:clamp(42px,7vw,78px);line-height:.95;margin:10px 0;color:var(--navy);letter-spacing:-2px}
-h1 span{color:var(--cyan)}
-.tagline{font-size:clamp(18px,2.4vw,27px);margin:20px auto;max-width:760px;font-weight:700}
-.cta{display:inline-block;margin:12px 7px;padding:15px 27px;border-radius:999px;text-decoration:none;font-weight:900}
-.primary{background:var(--navy);color:white}.secondary{background:white;color:var(--navy);border:2px solid var(--navy)}
-.section{max-width:1150px;margin:auto;padding:75px 22px}
-.section h2{text-align:center;font-size:38px;margin:0 0 12px;color:var(--navy)}
-.lead{text-align:center;max-width:760px;margin:0 auto 40px;font-size:18px}
-.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
-.card{background:var(--light);padding:25px 18px;border-radius:18px;text-align:center;border:1px solid #d7edf5}
-.icon{font-size:35px}.card h3{margin:10px 0 8px;color:var(--navy);font-size:17px}
-.card p{font-size:14px;line-height:1.5;margin:0}
-.highlight{background:linear-gradient(135deg,var(--navy),#0c78ad);color:white}
-.highlight h2{color:white}.highlight .lead{color:#e8f9ff}
-.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.benefit{background:rgba(255,255,255,.12);padding:25px;border-radius:18px;text-align:center}
-.benefit strong{display:block;font-size:18px;margin-bottom:8px}
-.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px;align-items:stretch}
-.gallery img{width:100%;height:100%;object-fit:cover;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
-.gallery img:first-child{grid-row:span 2}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.contact-box{background:var(--light);border-radius:22px;padding:32px}
-.contact-item{font-size:18px;margin:18px 0}.contact-item b{color:var(--navy)}
-footer{background:#062b52;color:white;text-align:center;padding:30px 20px}
-.small{font-size:14px;opacity:.85}
-@media(max-width:850px){
-  nav a{margin-left:10px;font-size:14px}.cards{grid-template-columns:repeat(2,1fr)}
-  .benefits{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr}
-  .gallery img:first-child{grid-column:span 2;grid-row:auto}.contact{grid-template-columns:1fr}
-}
-@media(max-width:520px){
-  nav{display:none}.nav{justify-content:center}.cards,.benefits,.gallery{grid-template-columns:1fr}
-  .gallery img:first-child{grid-column:auto}.hero{min-height:580px}
-}
-</style>
-</head>
-<body>
-
-<header>
-  <div class="nav">
-    <div class="brand">IKK <span>SERVICES</span></div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#why">Why Us</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="hero-inner">
-    <img class="hero-logo" src="splitclean-logo.png" alt="SplitClean AC">
-    <div style="font-weight:800;color:#087fbd;letter-spacing:2px">IKK SERVICES</div>
-    <h1>AC SPLIT<br><span>CLEANING</span></h1>
-    <div class="tagline">Clean air. Better cooling. Healthier home.</div>
-    <p>Professional air-conditioner cleaning, maintenance and home repair services in Tarawa.</p>
-    <a class="cta primary" href="tel:73068281">📞 BOOK NOW</a>
-    <a class="cta secondary" href="#services">VIEW SERVICES</a>
-  </div>
-</section>
-
-<section class="section" id="services">
-  <h2>Our AC Cleaning Includes</h2>
-  <p class="lead">Regular cleaning helps your AC cool better, run more efficiently and maintain cleaner indoor air.</p>
-  <div class="cards">
-    <div class="card"><div class="icon">🧼</div><h3>Filter Cleaning</h3><p>Removes dust and allergens from your AC filters.</p></div>
-    <div class="card"><div class="icon">❄️</div><h3>Evaporator Coil</h3><p>Deep cleaning to support better cooling performance.</p></div>
-    <div class="card"><div class="icon">🌀</div><h3>Fan & Blower</h3><p>Cleaning for smoother and quieter operation.</p></div>
-    <div class="card"><div class="icon">💧</div><h3>Drain Line</h3><p>Helps prevent water leaks, blockage and bad odours.</p></div>
-    <div class="card"><div class="icon">✓</div><h3>Complete AC Check</h3><p>Basic checks to help your AC run at its best.</p></div>
-  </div>
-</section>
-
-<section class="section highlight" id="why">
-  <h2>Why Choose IKK Services?</h2>
-  <p class="lead">Reliable service for homes and offices across Tarawa.</p>
-  <div class="benefits">
-    <div class="benefit"><strong>🛡️ Expert & Reliable</strong><span>Professional service you can trust.</span></div>
-    <div class="benefit"><strong>⏱️ Fast & On Time</strong><span>We value your time and comfort.</span></div>
-    <div class="benefit"><strong>👍 Affordable Prices</strong><span>Quality service at fair prices.</span></div>
-    <div class="benefit"><strong>🏠 Home & Office</strong><span>We clean all brands and models.</span></div>
-  </div>
-</section>
-
-<section class="section" id="gallery">
-  <h2>Our Work & Brand</h2>
-  <p class="lead">See our AC cleaning service presentation and business details.</p>
-  <div class="gallery">
-    <img src="ac-cleaning-ad.png" alt="IKK Services AC split cleaning advertisement">
-    <img src="business-card.png" alt="IKK Services business card">
-    <img src="splitclean-logo.png" alt="SplitClean AC logo">
-  </div>
-</section>
-
-
-<section class="section" id="contact">
-  <h2>Book Your AC Cleaning</h2>
-  <p class="lead">Ready for cleaner air and better cooling? Contact IKK Services today.</p>
-  <div class="contact">
-    <div class="contact-box">
-      <div class="contact-item">📞 <b>Phone:</b> <a href="tel:73068281">73068281</a></div>
-      <div class="contact-item">✉️ <b>Email:</b> <a href="mailto:roytekauteb@gmail.com">roytekauteb@gmail.com</a></div>
-      <div class="contact-item">📍 <b>Location:</b> Tarawa, Gilbert Islands</div>
-      <div class="contact-item">📱 <b>Social:</b> @IKKSERVICES</div>
-    </div>
-    <div style="text-align:center">
-      <h3 style="font-size:32px;color:#073b73;margin-bottom:8px">Breathe Clean.<br>Feel the Difference.</h3>
-      <a class="cta primary" href="tel:73068281">CALL 73068281</a>
-      <a class="cta secondary" href="mailto:roytekauteb@gmail.com">EMAIL US</a>
-    </div>
-  </div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book AC Cleaning - IKK Services</title>
+    <title>IKK SERVICES - AC Cleaning, Maintenance & Home Repairs</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        :root {
-            --primary-blue: #0A3D62;
-            --accent-blue: #1B9CFC;
-            --light-bg: #F4F8FA;
-            --text-color: #2C3E50;
-        }
-
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--light-bg);
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
         }
-
-        .booking-container {
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 100%;
-            padding: 30px;
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
-        .booking-header {
-            text-align: center;
-            margin-bottom: 25px;
+        .gold-bg {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
         }
-
-        .booking-header h2 {
-            color: var(--primary-blue);
-            margin: 0 0 8px 0;
-            font-size: 1.6rem;
-        }
-
-        .booking-header p {
-            color: #666;
-            margin: 0;
-            font-size: 0.95rem;
-        }
-
-        .form-group {
-            margin-bottom: 18px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 6px;
-            color: var(--primary-blue);
-            font-size: 0.9rem;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #CCC;
-            border-radius: 6px;
-            font-size: 0.95rem;
-            box-sizing: border-box;
-            transition: border-color 0.2s;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--accent-blue);
-        }
-
-        .form-row {
-            display: flex;
-            gap: 15px;
-        }
-
-        .form-row .form-group {
-            flex: 1;
-        }
-
-        .submit-btn {
-            width: 100%;
-            background-color: var(--primary-blue);
-            color: #ffffff;
-            border: none;
-            padding: 14px;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            margin-top: 10px;
-        }
-
-        .submit-btn:hover {
-            background-color: #082D49;
+        .sky-gradient {
+            background: linear-gradient(180deg, #E0F2FE 0%, #FFFFFF 100%);
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-<div class="booking-container">
-    <div class="booking-header">
-        <h2>Book Your AC Cleaning</h2>
-        <p>IKK Services – Tarawa, Gilbert Islands</p>
+    <!-- Header / Navbar -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-40 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="p-2 bg-slate-900 rounded-xl text-yellow-500 shadow-md">
+                    <i data-lucide="wrench" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-tight text-slate-900">IKK <span class="text-amber-600">SERVICES</span></span>
+                    <p class="text-[10px] uppercase tracking-wider font-semibold text-gray-500 hidden sm:block">AC Cleaning & Home Repairs</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm text-gray-700">
+                <a href="#services" class="hover:text-cyan-600 transition">Services</a>
+                <a href="#why-us" class="hover:text-cyan-600 transition">Why Choose Us</a>
+                <a href="#contact" class="hover:text-cyan-600 transition">Contact</a>
+            </nav>
+
+            <a href="tel:73068281" class="hidden sm:inline-flex items-center space-x-2 bg-cyan-600 hover:bg-cyan-700 text-white font-bold px-5 py-2.5 rounded-full transition shadow-lg shadow-cyan-600/20">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+                <span>Call 73068281</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-sky-100 via-sky-50 to-white pt-12 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1.5 rounded-full">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-cyan-600"></i>
+                        <span>Professional Split-Unit AC Services</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                        Clean Air. Better Cooling. <br/>
+                        <span class="text-cyan-600">Healthier Home.</span>
+                    </h1>
+
+                    <p class="text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
+                        Expert AC split cleaning, maintenance, and home repairs in Tarawa. Improve your air quality, lower electricity bills, and extend your AC life.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="toggleModal()" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-xl shadow-xl transition flex items-center justify-center space-x-2">
+                            <i data-lucide="calendar" class="w-5 h-5 text-amber-400"></i>
+                            <span>Book Cleaning Now</span>
+                        </button>
+                        <a href="mailto:roytekauteb@gmail.com" class="w-full sm:w-auto bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold px-8 py-4 rounded-xl transition text-center">
+                            Direct Contact
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="pt-6 grid grid-cols-3 gap-2 text-center border-t border-sky-200/60">
+                        <div>
+                            <p class="font-extrabold text-slate-900 text-lg">100%</p>
+                            <p class="text-xs text-gray-500 font-medium">Reliable Service</p>
+                        </div>
+                        <div>
+                            <p class="font-extrabold text-slate-900 text-lg">Affordable</p>
+                            <p class="text-xs text-gray-500 font-medium">Fair Pricing</p>
+                        </div>
+                        <div>
+                            <p class="font-extrabold text-slate-900 text-lg">All Brands</p>
+                            <p class="text-xs text-gray-500 font-medium">& Models Serviced</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic Box -->
+                <div class="relative flex justify-center">
+                    <div class="w-full max-w-md bg-white p-8 rounded-3xl shadow-2xl border border-sky-100 space-y-6">
+                        <div class="flex items-center space-x-4 border-b pb-4">
+                            <div class="p-3 bg-cyan-50 text-cyan-600 rounded-2xl">
+                                <i data-lucide="wind" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-lg">SplitClean AC</h3>
+                                <p class="text-sm text-gray-500">Air Conditioner Cleaning Specialist</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-start space-x-3">
+                            <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5"></i>
+                            <p class="text-xs text-amber-900 font-medium">
+                                <strong class="block text-amber-950 font-bold mb-0.5">Dirty AC = High Bills & Poor Air Quality</strong>
+                                Dust and mold restrict airflow, forcing your unit to draw more power.
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between text-sm font-semibold text-slate-700 bg-gray-50 p-3 rounded-lg">
+                                <span class="flex items-center space-x-2">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600"></i>
+                                    <span>Improve Air Quality</span>
+                                </span>
+                                <span class="text-xs bg-cyan-100 text-cyan-800 px-2 py-0.5 rounded">Optimal</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm font-semibold text-slate-700 bg-gray-50 p-3 rounded-lg">
+                                <span class="flex items-center space-x-2">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600"></i>
+                                    <span>Save Energy</span>
+                                </span>
+                                <span class="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">Lower Bills</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm font-semibold text-slate-700 bg-gray-50 p-3 rounded-lg">
+                                <span class="flex items-center space-x-2">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600"></i>
+                                    <span>Extend AC Lifespan</span>
+                                </span>
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded">Long Lasting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Our AC Cleaning Includes -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-extrabold uppercase tracking-widest text-cyan-600 mb-2">Thorough Maintenance</h2>
+                <p class="text-3xl font-extrabold text-slate-900">Our AC Cleaning Service Includes</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100 hover:border-cyan-200 transition hover:shadow-lg group">
+                    <div class="w-12 h-12 bg-cyan-600 text-white rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                        <i data-lucide="grid" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Filter Cleaning</h3>
+                    <p class="text-sm text-gray-600">Removes dust, pet dander, and harmful allergens to keep your indoor air fresh and clear.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100 hover:border-cyan-200 transition hover:shadow-lg group">
+                    <div class="w-12 h-12 bg-cyan-600 text-white rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Evaporator Coil Cleaning</h3>
+                    <p class="text-sm text-gray-600">Deep pressure washing of coils for optimal heat transfer and maximum cooling performance.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100 hover:border-cyan-200 transition hover:shadow-lg group">
+                    <div class="w-12 h-12 bg-cyan-600 text-white rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                        <i data-lucide="fan" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Fan & Blower Cleaning</h3>
+                    <p class="text-sm text-gray-600">Cleans build-up from internal blowers to restore smooth, powerful, and quiet operation.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100 hover:border-cyan-200 transition hover:shadow-lg group">
+                    <div class="w-12 h-12 bg-cyan-600 text-white rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                        <i data-lucide="droplet" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Drain Line Cleaning</h3>
+                    <p class="text-sm text-gray-600">Flushes out blockages to prevent accidental water leaks, mold growth, and bad odors.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100 hover:border-cyan-200 transition hover:shadow-lg group">
+                    <div class="w-12 h-12 bg-cyan-600 text-white rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Complete AC Check</h3>
+                    <p class="text-sm text-gray-600">Comprehensive inspection of overall system health to ensure your AC runs at its absolute best.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 hover:shadow-lg group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-500 text-slate-900 rounded-xl flex items-center justify-center mb-5 font-bold">
+                            <i data-lucide="home" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">General Home Repairs</h3>
+                        <p class="text-sm text-gray-300">Need more than AC work? We offer general handyman and home repair services as well.</p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center space-x-2 text-amber-400 font-bold text-sm mt-4 hover:underline">
+                        <span>Inquire about home repairs</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-slate-800/60 rounded-2xl border border-slate-700/50 text-center">
+                    <div class="w-12 h-12 mx-auto bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="award" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Expert & Reliable</h4>
+                    <p class="text-sm text-gray-400">Professional service you can trust every single time.</p>
+                </div>
+
+                <div class="p-6 bg-slate-800/60 rounded-2xl border border-slate-700/50 text-center">
+                    <div class="w-12 h-12 mx-auto bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Fast & On Time</h4>
+                    <p class="text-sm text-gray-400">We respect your schedule and value your time and comfort.</p>
+                </div>
+
+                <div class="p-6 bg-slate-800/60 rounded-2xl border border-slate-700/50 text-center">
+                    <div class="w-12 h-12 mx-auto bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="thumbs-up" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Affordable Prices</h4>
+                    <p class="text-sm text-gray-400">High-quality maintenance solutions delivered at fair rates.</p>
+                </div>
+
+                <div class="p-6 bg-slate-800/60 rounded-2xl border border-slate-700/50 text-center">
+                    <div class="w-12 h-12 mx-auto bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="building-2" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Home & Office</h4>
+                    <p class="text-sm text-gray-400">We service all major brands and models for residential & commercial spaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Details -->
+    <section id="contact" class="py-20 bg-sky-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-sky-100">
+                <div class="grid lg:grid-cols-2">
+                    <!-- Info Side -->
+                    <div class="p-8 sm:p-12 bg-slate-900 text-white flex flex-col justify-between">
+                        <div>
+                            <span class="text-amber-400 text-xs font-extrabold uppercase tracking-widest">Get In Touch</span>
+                            <h2 class="text-3xl font-extrabold mt-2 mb-6">Contact IKK Services</h2>
+                            <p class="text-gray-300 text-sm mb-8 leading-relaxed">
+                                Ready for cleaner air and lower electricity bills? Reach out directly or send us a message to schedule an appointment.
+                            </p>
+
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="p-3 bg-slate-800 text-amber-400 rounded-xl">
+                                        <i data-lucide="phone-call" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-400 uppercase font-semibold">Phone Number</p>
+                                        <a href="tel:73068281" class="text-lg font-bold hover:text-amber-400 transition">73068281</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div class="p-3 bg-slate-800 text-amber-400 rounded-xl">
+                                        <i data-lucide="mail" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-400 uppercase font-semibold">Direct Email</p>
+                                        <a href="mailto:roytekauteb@gmail.com" class="text-base font-bold hover:text-amber-400 transition">roytekauteb@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div class="p-3 bg-slate-800 text-amber-400 rounded-xl">
+                                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-400 uppercase font-semibold">Location</p>
+                                        <p class="text-base font-bold">Tarawa, Gilbert Islands</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div class="p-3 bg-slate-800 text-amber-400 rounded-xl">
+                                        <i data-lucide="at-sign" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-400 uppercase font-semibold">Social Media</p>
+                                        <p class="text-base font-bold">@IKKSERVICES</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-8 mt-8 border-t border-slate-800 text-xs text-gray-400">
+                            Regular Cleaning = Better Cooling + Lower Bills + Longer AC Life
+                        </div>
+                    </div>
+
+                    <!-- Quick Form -->
+                    <div class="p-8 sm:p-12">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-6">Send a Quick Message</h3>
+                        <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Your Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-cyan-600" placeholder="Full Name">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Phone or Email</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-cyan-600" placeholder="Contact Details">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Service Needed</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-cyan-600">
+                                    <option>AC Split Cleaning</option>
+                                    <option>AC Maintenance & Inspection</option>
+                                    <option>General Home Repair</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-2">Message Details</label>
+                                <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-cyan-600" placeholder="Describe your location or service requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 rounded-xl shadow-lg transition">
+                                Send Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-gray-400 py-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm space-y-2">
+            <p class="font-semibold text-gray-300">IKK SERVICES — Breathe Clean. Feel The Difference.</p>
+            <p class="text-xs text-gray-500">Tarawa, Gilbert Islands | Direct Contact: roytekauteb@gmail.com | Phone: 73068281</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="toggleModal()" class="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Book AC Service</h3>
+            <p class="text-sm text-gray-600 mb-6">Choose how you'd like to get in touch with us:</p>
+            
+            <div class="space-y-3">
+                <a href="tel:73068281" class="flex items-center justify-between p-4 bg-sky-50 hover:bg-sky-100 rounded-xl text-slate-900 font-bold transition">
+                    <span class="flex items-center space-x-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-cyan-600"></i>
+                        <span>Call 73068281</span>
+                    </span>
+                    <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400"></i>
+                </a>
+                
+                <a href="mailto:roytekauteb@gmail.com?subject=AC%20Cleaning%20Booking" class="flex items-center justify-between p-4 bg-amber-50 hover:bg-amber-100 rounded-xl text-slate-900 font-bold transition">
+                    <span class="flex items-center space-x-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-amber-600"></i>
+                        <span>Email Us</span>
+                    </span>
+                    <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <form action="#" method="POST">
-        <div class="form-group">
-            <label for="fullName">Full Name *</label>
-            <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
-        </div>
+    <!-- Script to render icons & handle interaction -->
+    <script>
+        lucide.createIcons();
 
-        <div class="form-row">
-            <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" placeholder="73060261" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="example@mail.com">
-            </div>
-        </div>
+        function toggleModal() {
+            const modal = document.getElementById('bookingModal');
+            modal.classList.toggle('hidden');
+        }
 
-        <div class="form-row">
-            <div class="form-group">
-                <label for="serviceType">Service Required *</label>
-                <select id="serviceType" name="serviceType" required>
-                    <option value="AC Split Cleaning">AC Split Cleaning</option>
-                    <option value="Full Maintenance">Full AC Check & Maintenance</option>
-                    <option value="Home Repair">Home Repair Service</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="units">Number of AC Units</label>
-                <input type="number" id="units" name="units" min="1" value="1" required>
-            </div>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group">
-                <label for="preferredDate">Preferred Date *</label>
-                <input type="date" id="preferredDate" name="preferredDate" required>
-            </div>
-            <div class="form-group">
-                <label for="preferredTime">Preferred Time *</label>
-                <select id="preferredTime" name="preferredTime" required>
-                    <option value="Morning">Morning (8 AM - 12 PM)</option>
-                    <option value="Afternoon">Afternoon (12 PM - 4 PM)</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="location">Location / Village in Tarawa *</label>
-            <input type="text" id="location" name="location" placeholder="e.g., Bairiki, Betio, Bikenibeu" required>
-        </div>
-
-        <div class="form-group">
-            <label for="notes">Additional Notes / AC Brand</label>
-            <textarea id="notes" name="notes" rows="3" placeholder="Specify AC brand, unit issues, or specific directions..."></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">Confirm Booking</button>
-    </form>
-</div>
-
-</body>
-</html>
-
-
-<footer>
-  <strong>IKK SERVICES</strong> — AC Cleaning Maintenance and Home Repairs
-  <div class="small">Tarawa, Gilbert Islands • 73068281 • roytekauteb@gmail.com</div>
-</footer>
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out! We will contact you shortly.');
+            e.target.reset();
+        }
+    </script>
 </body>
 </html>
