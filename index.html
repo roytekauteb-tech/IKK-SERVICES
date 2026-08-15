@@ -127,6 +127,7 @@ footer{background:#062b52;color:white;text-align:center;padding:30px 20px}
   </div>
 </section>
 
+
 <section class="section" id="contact">
   <h2>Book Your AC Cleaning</h2>
   <p class="lead">Ready for cleaner air and better cooling? Contact IKK Services today.</p>
@@ -143,7 +144,186 @@ footer{background:#062b52;color:white;text-align:center;padding:30px 20px}
       <a class="cta secondary" href="mailto:roytekauteb@gmail.com">EMAIL US</a>
     </div>
   </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book AC Cleaning - IKK Services</title>
+    <style>
+        :root {
+            --primary-blue: #0A3D62;
+            --accent-blue: #1B9CFC;
+            --light-bg: #F4F8FA;
+            --text-color: #2C3E50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .booking-container {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+        }
+
+        .booking-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .booking-header h2 {
+            color: var(--primary-blue);
+            margin: 0 0 8px 0;
+            font-size: 1.6rem;
+        }
+
+        .booking-header p {
+            color: #666;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--primary-blue);
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #CCC;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            border: none;
+            padding: 14px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #082D49;
+        }
+    </style>
+</head>
+<body>
+
+<div class="booking-container">
+    <div class="booking-header">
+        <h2>Book Your AC Cleaning</h2>
+        <p>IKK Services – Tarawa, Gilbert Islands</p>
+    </div>
+
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="73060261" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="serviceType">Service Required *</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="AC Split Cleaning">AC Split Cleaning</option>
+                    <option value="Full Maintenance">Full AC Check & Maintenance</option>
+                    <option value="Home Repair">Home Repair Service</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="units">Number of AC Units</label>
+                <input type="number" id="units" name="units" min="1" value="1" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="preferredDate">Preferred Date *</label>
+                <input type="date" id="preferredDate" name="preferredDate" required>
+            </div>
+            <div class="form-group">
+                <label for="preferredTime">Preferred Time *</label>
+                <select id="preferredTime" name="preferredTime" required>
+                    <option value="Morning">Morning (8 AM - 12 PM)</option>
+                    <option value="Afternoon">Afternoon (12 PM - 4 PM)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location / Village in Tarawa *</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Bairiki, Betio, Bikenibeu" required>
+        </div>
+
+        <div class="form-group">
+            <label for="notes">Additional Notes / AC Brand</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Specify AC brand, unit issues, or specific directions..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Confirm Booking</button>
+    </form>
+</div>
+
+</body>
+</html>
+
 
 <footer>
   <strong>IKK SERVICES</strong> — AC Cleaning Maintenance and Home Repairs
